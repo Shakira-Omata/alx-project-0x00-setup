@@ -44,21 +44,50 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-      {/* Combined Variants */}
+      {/* Combined Variants - All sizes with different shapes */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Combined Variants</h2>
         <div className="flex gap-4 flex-wrap">
+          {/* Small buttons with different shapes */}
+          <Button 
+            title="Small Rounded SM" 
+            styles="text-sm px-4 py-1 bg-purple-500 text-white rounded-sm"
+          />
+          <Button 
+            title="Small Rounded MD" 
+            styles="text-sm px-4 py-1 bg-purple-500 text-white rounded-md"
+          />
           <Button 
             title="Small Rounded Full" 
             styles="text-sm px-4 py-1 bg-purple-500 text-white rounded-full"
           />
+          
+          {/* Medium buttons with different shapes */}
           <Button 
             title="Medium Rounded SM" 
-            styles="text-base px-6 py-2 bg-purple-500 text-white rounded-sm"
+            styles="text-base px-6 py-2 bg-indigo-500 text-white rounded-sm"
+          />
+          <Button 
+            title="Medium Rounded MD" 
+            styles="text-base px-6 py-2 bg-indigo-500 text-white rounded-md"
+          />
+          <Button 
+            title="Medium Rounded Full" 
+            styles="text-base px-6 py-2 bg-indigo-500 text-white rounded-full"
+          />
+          
+          {/* Large buttons with different shapes */}
+          <Button 
+            title="Large Rounded SM" 
+            styles="text-lg px-8 py-3 bg-pink-500 text-white rounded-sm"
           />
           <Button 
             title="Large Rounded MD" 
-            styles="text-lg px-8 py-3 bg-purple-500 text-white rounded-md"
+            styles="text-lg px-8 py-3 bg-pink-500 text-white rounded-md"
+          />
+          <Button 
+            title="Large Rounded Full" 
+            styles="text-lg px-8 py-3 bg-pink-500 text-white rounded-full"
           />
         </div>
       </div>
